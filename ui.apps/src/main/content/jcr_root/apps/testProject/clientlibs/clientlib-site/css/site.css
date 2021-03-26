@@ -1,1 +1,7 @@
-.cmp-hello-world-sass:before{content:"\003e";display:inline-block;padding:0 10px}
+.cmp-hello-world-sass:before {
+    content: "\003e";
+    display: inline-block;
+    padding: 0 10px
+}
+
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";

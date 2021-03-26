@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-03-26T23:11:08.854+05:30"
+        cq:lastModified="{Date}2021-03-26T23:48:46.698+05:30"
         cq:lastModifiedBy="admin"
         cq:template="/conf/EditableTemplateForTestingProject/settings/wcm/templates/empty-page"
         jcr:primaryType="cq:PageContent"
@@ -23,6 +23,32 @@
                     sling:resourceType="testProject/components/content/banner"
                     bannerSubtitle="banner subtitle"
                     bannerTitle="This is a banner"/>
+                <responsivegrid
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wcm/foundation/components/responsivegrid">
+                    <card
+                        jcr:created="{Date}2021-03-26T23:41:54.294+05:30"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-03-26T23:47:36.403+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="testProject/components/content/card"
+                        text="This is a text">
+                        <cq:responsive jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                offset="3"
+                                width="5"/>
+                        </cq:responsive>
+                        <textArea
+                            jcr:lastModified="{Date}2021-03-26T23:48:46.695+05:30"
+                            jcr:lastModifiedBy="admin"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="testProject/components/content/text"
+                            text="&lt;p>&lt;b>This is a card&lt;/b>&lt;br>&#xd;&#xa;&lt;/p>&#xd;&#xa;"
+                            textIsRich="true"/>
+                    </card>
+                </responsivegrid>
             </responsivegrid>
         </root>
     </jcr:content>
